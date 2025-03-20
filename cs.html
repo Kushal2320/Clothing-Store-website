@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <!-- Link to Google Fonts for Gen Z-style font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cs.css">
+</head>
+
+<body>
+    <div id="popupNav" class="popup-nav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#map">Map</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">☰</button>
+
+    <!-- Main Content -->
+    <div class="header">
+        <!-- Brand Logo Section -->
+        <div class="logo">
+            <h1>Clothing store</h1>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+
+    <div id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about blending modern trends with classic designs, so you can enjoy versatile, long-lasting
+            fashion that fits every occasion. Whether you’re dressing up for a night out or keeping it casual on the
+            weekends, our goal is to offer clothing that empowers you to embrace your individuality.</p>
+    </div>
+
+    <!-- Collection Section -->
+    <div id="collection" class="collection">
+        <h2>Our Collection</h2>
+        <div class="collection-buttons">
+            <button onclick="openTshirtPage()" class="hover-button">T-Shirts</button>
+            <button onclick="openShirtPage()" class="hover-button">Shirts</button>
+            <button onclick="openJacketPage()" class="hover-button">Jackets</button>
+            <button onclick="openShirtPage()" class="hover-button">Pants</button>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@clothingstore.com</p>
+        <p>Phone: +91999999999</p>
+    </div>
+
+    <!-- Instagram Section -->
+    <div id="instagram">
+        <h2>Follow Us on Instagram</h2>
+        <a href="https://instagram.com" target="_blank" id="instagram-button">
+            <i class="fab fa-instagram"></i>Our Insta Page - Tap
+        </a>
+    </div>
+
+
+
+    <!-- Embedded Map Section -->
+    <div id="map">
+        <h2>Find Us</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.8738049994245!2d78.93795707511092!3d22.054422329864128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5661d35de0177%3A0x55e148e0ef31ac19!2sGolganj%2C%20Chhindwara%2C%20Madhya%20Pradesh%20480001!5e0!3m2!1sen!2sin!4v1732804401310!5m2!1sen!2sin"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="cs.js"></script>
+</body>
+
+</html>

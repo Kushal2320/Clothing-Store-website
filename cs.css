@@ -1,0 +1,289 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Bangers', sans-serif;
+    text-align: center;
+    background-image: url('bkg.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo h1 {
+    font-size: 48px;
+    color: #ff6347;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #111;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+.collection-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.collection-buttons button {
+    flex: 0 1 calc(50% - 20px);
+    max-width: 200px;
+}
+
+.hover-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hover-button:hover {
+    background-color: #e5533c;
+    transform: scale(1.05);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup-content {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-buttons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.carousel-btn {
+    padding: 5px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 0.1;
+    margin: 5px;
+}
+
+.carousel-btn:hover {
+    background-color: #e5533c;
+    transform: scale(1.05);
+}
+
+.product-image {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    width: 200px;
+    height: auto;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.buy-now {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-now:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.close-popup {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.close-popup:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+.popup-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.popup-nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.popup-nav a:hover {
+    color: #f1f1f1;
+}
+
+#contact, #instagram, #about, #map {
+    padding: 20px;
+    margin: 20px;
+}
+
+#map iframe {
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#instagram-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 0.5px;
+    background-color: #E4405F;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#instagram-button i {
+    margin-right: 18px;
+    font-size: 25px;
+}
+
+#instagram-button:hover {
+    background-color: #C13584;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+    .popup-content {
+        padding: 10px;
+        width: 90%;
+        max-width: 350px;
+        height: 85%;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .popup-image {
+        max-height: 60%;
+        margin-bottom: 10px;
+    }
+
+    .buy-now {
+        margin-top: 15px;
+        padding: 12px 20px;
+    }
+
+    .carousel-buttons {
+        margin-top: 10px;
+    }
+
+    .close-popup {
+        top: 5px;
+        right: 10px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unreall</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    <div id="popupNav" class="popup-nav">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#map">Map</a>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <h1>Clothing store</h1>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+
+    <div id="tshirt">
+        <h2>Shirts Collection</h2>
+        <p>Explore our stylish T-shirts collection!</p>
+
+        <div class="carousel-container">
+            <div id="shirt-display" class="product">
+                <img id="shirt1" class="product-image" src="sssss.avif" alt="Shirt 1" 
+                onclick="showPopup({
+                    img: 'sssss.avif',
+                    title: 'Formal White Shirt',
+                    description: 'A classic white shirt for formal occasions.',
+                    price: 'Rs.30',
+                    gallery: ['sssss.avif', 'Artboard4.webp', 'Artboard8.webp']
+                })">
+                <h3 id="shirt-title">Formal White Shirt</h3>
+                <p id="shirt-description">A classic white shirt for formal occasions.</p>
+                <p id="shirt-price">Price: Rs.30</p>
+            </div>
+
+            <div id="shirt-display" class="product">
+                <img id="shirt1" class="product-image" src="Artboard4.webp" alt="Shirt 1" 
+                onclick="showPopup({
+                    img: 'Artboard4.webp',
+                    title: 'Formal White Shirt',
+                    description: 'A classic white shirt for formal occasions.',
+                    price: 'Rs.30',
+                    gallery: ['Artboard4.webp', 'Artboard8.webp', 'sssss.avif']
+                })">
+                <h3 id="shirt-title">Formal White Shirt</h3>
+                <p id="shirt-description">A classic white shirt for formal occasions.</p>
+                <p id="shirt-price">Price: R̶s̶ ̶1̶5̶0̶0̶ &nbsp;&nbsp;Rs 1000&nbsp;&nbsp;30% OFF
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="productPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup" onclick="closePopup()">&times;</span>
+            <img id="popupImage" src="" alt="Product Image" class="popup-image">
+            <div class="carousel-buttons">
+                <button class="carousel-btn" onclick="swipeImage(-1)">←</button>
+                <button class="carousel-btn" onclick="swipeImage(1)">→</button>
+            </div>
+            <p id="popupPrice" class="popup-price"></p>
+            <button class="buy-now" onclick="buyNow()">Buy Now</button>
+            <h3 id="popupTitle"></h3>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@clothingstore.com</p>
+        <p>Phone: +91999999999</p>
+    </div>
+
+    <div id="instagram">
+        <h2>Follow Us on Instagram</h2>
+        <a href="https://instagram.com" target="_blank" id="instagram-button">
+            <i class="fab fa-instagram"></i>Our Insta Page - Tap
+        </a>
+    </div>
+
+    <div id="map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.8738049994245!2d78.93795707511092!3d22.054422329864128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5661d35de0177%3A0x55e148e0ef31ac19!2sGolganj%2C%20Chhindwara%2C%20Madhya%20Pradesh%20480001!5e0!3m2!1sen!2sin!4v1732804401310!5m2!1sen!2sin" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script src="cs.js"></script>
+</body>
+</html>
